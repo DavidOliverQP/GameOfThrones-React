@@ -66,7 +66,9 @@ const Intro = () => {
                 </div>
 
                 <div className="container wallpaper3">
+                    <div className="container-content3">
 
+                    </div>
                 </div>
 
                 <div className="container wallpaper4">

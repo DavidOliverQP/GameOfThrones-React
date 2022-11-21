@@ -111,7 +111,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   width: 100%;
-
+  background: linear-gradient(rgba(0, 0, 0, 0)70%, rgb(0, 0, 0) 90%);
 }
 
 .title-content {
@@ -186,7 +186,7 @@ body::-webkit-scrollbar-thumb {
   margin-top: -15vw;
   display: flex;
   justify-content: center;
-
+  filter: opacity(0.8);
 
 }
 

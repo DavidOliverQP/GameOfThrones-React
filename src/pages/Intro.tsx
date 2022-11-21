@@ -2,6 +2,8 @@ import React from 'react'
 import hero from "../css/Assets/Game-of-Thrones_logo_PNG2.png"
 import jaime from '../css/Assets/yrZAKuXv6wUkQRHbhRVEWW.jpg'
 import tyrion from "../css/Assets/Tyrion-Lannister-PNG-Picture.png"
+import tyrion2 from "../css/Assets/1_OtG2bOqXGBQYWqw7Tef_Tg.jpeg"
+import jonSnow from "../css/Assets/0296738.jpg"
 const Intro = () => {
     return (
         <>
@@ -36,10 +38,10 @@ const Intro = () => {
 
                             <div className="cards">
                                 <ul>
-                                    <li className="card"><img src={jaime} alt="" /></li>
-                                    <li className="card"><img src={jaime} alt="" /></li>
-                                    <li className="card"><img src={jaime} alt="" /></li>
-                                    <li className="card"><img src={jaime} alt="" /></li>
+                                    <li className="card disabled"><img src={jaime} alt="" /></li>
+                                    <li className="card"><img src={tyrion2} alt="" /></li>
+                                    <li className="card disabled"><img src={jonSnow} alt="" /></li>
+                                    <li className="card disabled"><img src={jaime} alt="" /></li>
                                 </ul>
                             </div>
 

@@ -130,6 +130,18 @@ body::-webkit-scrollbar-thumb {
   margin-top: 5vw;
 }
 
+.card {
+  cursor: pointer;
+}
+
+.card.disabled {
+  filter: grayscale(100);
+}
+
+.card.disabled:hover {
+  filter: grayscale(0);
+}
+
 .cards ul {
   list-style: none;
 }
@@ -137,10 +149,18 @@ body::-webkit-scrollbar-thumb {
 .card img {
   width: 150px;
   margin: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.263);
+
   border-radius: 5px;
   padding: 5px;
 
+}
+
+.card.disabled img {
+  border: 1px solid rgba(255, 255, 255, 0.175);
+}
+
+.card img {
+  border: 2px solid rgba(255, 255, 255, 0.773);
 }
 
 .info {

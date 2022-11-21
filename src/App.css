@@ -142,6 +142,8 @@ body::-webkit-scrollbar-thumb {
   filter: grayscale(0);
 }
 
+
+
 .cards ul {
   list-style: none;
 }

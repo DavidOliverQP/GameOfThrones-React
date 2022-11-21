@@ -1,6 +1,7 @@
 import React from 'react'
 import hero from "../css/Assets/Game-of-Thrones_logo_PNG2.png"
 import jaime from '../css/Assets/yrZAKuXv6wUkQRHbhRVEWW.jpg'
+import tyrion from "../css/Assets/Tyrion-Lannister-PNG-Picture.png"
 const Intro = () => {
     return (
         <>
@@ -44,12 +45,16 @@ const Intro = () => {
 
                             <div className="info">
 
+                                <div className="info-name">
+                                    <h2>Tyrion Lannister</h2>
+                                </div>
+
                                 <div className="info-text">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis iusto rem, alias dolor commodi impedit quisquam ut, eum illo quaerat officia. Repellat et adipisci consectetur! Voluptatem quos officiis odio quaerat.</p>
+                                    <p>Lord Tyrion Lannister is the youngest child of Lord Tywin Lannister and younger brother of Cersei and Jaime Lannister. A dwarf, he uses his wit and intellect to overcome the prejudice he faces. He is the current Lord of Casterly Rock and Hand of the King to Brandon Stark.</p>
                                 </div>
 
                                 <div className="img-person">
-                                    <img src="" alt="" />
+                                    <img src={tyrion} alt="" />
                                 </div>
                             </div>
 

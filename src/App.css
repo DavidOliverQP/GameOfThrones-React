@@ -28,6 +28,7 @@ body::-webkit-scrollbar-thumb {
 .container {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .container.walpaper1 {
@@ -126,6 +127,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   flex-direction: row;
   width: 100%;
+  margin-top: 5vw;
 }
 
 .cards ul {
@@ -145,6 +147,29 @@ body::-webkit-scrollbar-thumb {
   width: 50%;
 }
 
+.info-name {
+  margin-left: 60px
+}
+
 .info-text {
   margin-left: 60px;
+  text-shadow: 2px 1px black;
+}
+
+.info-text p {
+  color: rgb(213, 213, 213);
+}
+
+.img-person {
+  position: relative;
+  z-index: -1;
+  margin-top: -15vw;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.img-person img {
+  width: 350px;
 }

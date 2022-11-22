@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
 :root {
   --gradiente: linear-gradient(rgba(174, 0, 0, 0.297), rgb(16, 244, 0));
 }
@@ -13,7 +15,7 @@ body {
   background-size: cover;
   overflow-x: hidden;
   box-sizing: border-box;
-
+  font-family: 'Cinzel', serif;
 }
 
 body::-webkit-scrollbar {
@@ -369,6 +371,15 @@ ul {
   width: 100%;
   border: 1px solid white;
 
+}
+
+.copyright {
+  margin-top: 10vh;
+  position: relative;
+  display: flex;
+  text-transform: uppercase;
+  opacity: .5;
+  font-weight: 700;
 }
 
 

@@ -131,6 +131,10 @@ const Intro = () => {
                                 <img src={jaime} alt="" />
                             </div>
                         </div>
+
+                        <div className="copyright">
+                            @David Oliveira
+                        </div>
                     </div>
 
 

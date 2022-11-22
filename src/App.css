@@ -217,7 +217,8 @@ body::-webkit-scrollbar-thumb {
 
 .container-content3 {
   width: 100vw;
-
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .container-content3 .title-container {

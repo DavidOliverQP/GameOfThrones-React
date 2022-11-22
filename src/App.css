@@ -255,6 +255,11 @@ select option {
   filter: grayscale(0.7);
   border: 1px solid rgba(255, 255, 255, 0.404);
   padding: 3px;
+  cursor: pointer;
+}
+
+.episode-card img:hover {
+  filter: grayscale(0);
 }
 
 .episode-card.active img {
@@ -307,14 +312,22 @@ ul {
 }
 
 .galery-left {
-  margin-top: -2vh;
+  margin-top: -1.4vh;
   width: 16%;
 }
 
 .galery-left img {
   width: 100%;
-  ;
+  margin-bottom: -4px;
+  filter: grayscale(1);
+  cursor: pointer;
+
 }
+
+.galery-left img:hover {
+  filter: grayscale(0);
+}
+
 
 
 

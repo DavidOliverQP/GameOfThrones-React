@@ -334,6 +334,12 @@ ul {
   padding-top: 2px;
 }
 
+.galery-left img.active {
+  filter: grayscale(0);
+  border-bottom: 1px solid white;
+  box-shadow: 1px 10px 50px black;
+}
+
 .galery-left li:last-child {
   border-bottom: 1px solid white;
   padding-bottom: 3px;
@@ -348,7 +354,7 @@ ul {
 
 .galery-right {
   width: 55%;
-  z-index: 5;
+  z-index: 2;
 }
 
 .galery-right img {

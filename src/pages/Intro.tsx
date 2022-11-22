@@ -121,7 +121,7 @@ const Intro = () => {
                         <div className="galery">
                             <div className="galery-left">
                                 <ul>
-                                    <li><img src={jaime} /></li>
+                                    <li><img src={jaime} className="active" /></li>
                                     <li><img src={jaime} /></li>
                                     <li><img src={jaime} /></li>
                                     <li><img src={jaime} /></li>

@@ -17,9 +17,9 @@ const Intro = () => {
 
                         <div className="social-medias-container">
                             <ul>
-                                <li> <a href=""><i className="fa-brands fa-github"></i></a> </li>
-                                <li><a href=""><i className="fa-brands fa-linkedin"></i></a></li>
-                                <li><a href=""><i className="fa-brands fa-instagram"></i></a></li>
+                                <li> <a href="https://github.com/Daviprogramming" target="__blank"><i className="fa-brands fa-github"></i></a> </li>
+                                <li><a href="https://www.linkedin.com/in/david-oliveira-077a77212" target="__blank"><i className="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://www.instagram.com/asdavidoliveira/" target="__blank"><i className="fa-brands fa-instagram"></i></a></li>
                             </ul>
                         </div>
 

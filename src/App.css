@@ -321,7 +321,22 @@ ul {
   margin-bottom: -4px;
   filter: grayscale(1);
   cursor: pointer;
+  padding-left: 3px;
 
+}
+
+.galery-left li {
+  border-left: 2px solid white;
+}
+
+.galery-left li:first-child {
+  border-top: 1px solid white;
+  padding-top: 2px;
+}
+
+.galery-left li:last-child {
+  border-bottom: 1px solid white;
+  padding-bottom: 3px;
 }
 
 .galery-left img:hover {
@@ -333,10 +348,11 @@ ul {
 
 .galery-right {
   width: 55%;
-
+  z-index: 5;
 }
 
 .galery-right img {
   width: 100%;
+  border: 1px solid white;
 
 }

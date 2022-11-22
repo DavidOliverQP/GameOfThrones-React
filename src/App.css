@@ -48,15 +48,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .container.wallpaper3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.316), rgba(0, 0, 0, 0.415)), url(./css/Assets/game-of-thrones-iron-throne-characters-uhdpaper.com-4K-70.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.908), rgba(0, 0, 0, 0.558)), url(./css/Assets/game-of-thrones-iron-throne-characters-uhdpaper.com-4K-70.jpg);
   background-size: cover;
   height: 105vh;
-  box-shadow: 1px 20px 150px black, 1px 30px 250px black inset;
   z-index: 2;
 }
 
 .container.wallpaper4 {
-  background: linear-gradient(rgba(0, 0, 0, 0.316), rgba(0, 0, 0, 0.625)), url(./css/Assets/52-527304_game-of-thrones-landscape-wallpaper-hd.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.595), rgba(0, 0, 0, 0.625)), url(./css/Assets/52-527304_game-of-thrones-landscape-wallpaper-hd.jpg);
   background-size: cover;
   height: 100vh;
   box-shadow: 1px 20px 150px black, 1px 20px 250px black inset;
@@ -127,7 +126,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   flex-direction: row;
   width: 100%;
-  margin-top: 5vw;
+
 }
 
 .card {
@@ -194,4 +193,137 @@ body::-webkit-scrollbar-thumb {
 
 .img-person img {
   width: 350px;
+}
+
+.container-content3 {
+  width: 100vw;
+}
+
+.container-content3 .title-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100vw;
+  margin-top: 5vh;
+  gap: 20px;
+
+  font-size: 1.8rem;
+}
+
+.selectSeason {
+  background-color: transparent;
+  border: none;
+  margin-top: 0.5vh;
+  font-size: 1.5rem;
+}
+
+.selectSeason::after,
+.selectSeason::before,
+.selectSeason:enabled {
+  background-color: transparent;
+}
+
+select option {
+  background: black;
+  color: white;
+  margin: 10px;
+}
+
+.body-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.cards-episode {
+  width: 60%;
+}
+
+.cards-episode ul {
+  list-style: none;
+  margin-left: 10vw;
+}
+
+.episode-card {
+  width: 40vh;
+  margin: 10px;
+}
+
+.episode-card img {
+  width: 90%;
+  filter: grayscale(0.7);
+  border: 1px solid rgba(255, 255, 255, 0.404);
+  padding: 3px;
+}
+
+.episode-card.active img {
+  width: 100%;
+  filter: grayscale(0);
+}
+
+.infos-episodes {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-episode {
+  font-size: 2rem;
+}
+
+.infos-episodes p {
+  display: flex;
+  text-align: start;
+  width: 80%;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+
+.container-content4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-content4 h3 {
+
+  margin-bottom: 10vh;
+  font-size: 2rem;
+}
+
+.galery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.galery-left {
+  margin-top: -2vh;
+  width: 16%;
+}
+
+.galery-left img {
+  width: 100%;
+  ;
+}
+
+
+
+.galery-right {
+  width: 55%;
+
+}
+
+.galery-right img {
+  width: 100%;
+
 }

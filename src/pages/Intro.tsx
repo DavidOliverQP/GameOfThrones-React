@@ -46,7 +46,6 @@ const Intro = () => {
                             </div>
 
                             <div className="info">
-
                                 <div className="info-name">
                                     <h2>Tyrion Lannister</h2>
                                 </div>
@@ -67,11 +66,73 @@ const Intro = () => {
 
                 <div className="container wallpaper3">
                     <div className="container-content3">
+                        <div className="title-container">
+                            <h3>Episode Guide</h3> <select name="season" id="season" className='selectSeason'>
+                                <option value="season1"> <small>Season 1</small></option>
+                                <option value="season2">Season 2</option>
+                                <option value="season3">Season 3</option>
+                                <option value="season4">Season 4</option>
+                                <option value="season5">Season 5</option>
+                                <option value="season6">Season 6</option>
+                                <option value="season7">Season 7</option>
+                            </select>
+                        </div>
+
+                        <div className="body-container">
+
+                            <div className="cards-episode">
+                                <ul>
+                                    <li>
+                                        <div className="episode-card active">
+                                            <img src={jaime} alt="" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="episode-card">
+                                            <img src={jaime} alt="" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="episode-card">
+                                            <img src={jaime} alt="" />
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div className="infos-episodes">
+                                <h3 className="info-episode">
+                                    The Dragon and the Wolf
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate corporis cupiditate? Aliquid, distinctio modi fugit repellat, officia quo voluptates perferendis eius ex enim eum deserunt cupiditate culpa recusandae doloribus?</p>
+                            </div>
+
+
+                        </div>
 
                     </div>
                 </div>
 
                 <div className="container wallpaper4">
+                    <div className="container-content4">
+                        <h3>Gallery</h3>
+
+                        <div className="galery">
+                            <div className="galery-left">
+                                <ul>
+                                    <li><img src={jaime} /></li>
+                                    <li><img src={jaime} /></li>
+                                    <li><img src={jaime} /></li>
+                                    <li><img src={jaime} /></li>
+                                </ul>
+                            </div>
+                            <div className="galery-right">
+                                <img src={jaime} alt="" />
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
 

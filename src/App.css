@@ -407,7 +407,11 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 0;
+    margin-left: -5vh;
+  }
+
+  .info-episode {
+    font-size: 1.5rem;
   }
 
   .episode-card {

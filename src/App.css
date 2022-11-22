@@ -1,0 +1,197 @@
+* {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container.walpaper1 {
+
+  background: linear-gradient(rgba(0, 0, 0, 0.115), rgba(0, 0, 0, 0.559)), url(./css/Assets/game-of-thrones-season-8-arya-throne-pr1i4zp0o0m7mybi-pr1i4zp0o0m7mybi.jpg);
+  background-size: cover;
+  box-shadow: 1px 20px 150px black, 1px 20px 250px black inset;
+}
+
+
+.container.wallpaper2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.316), rgba(0, 0, 0, 0.415)), url(https://i.pinimg.com/originals/38/7b/9a/387b9a56ee3921bc38340beffee4c7a8.jpg);
+  background-size: cover;
+
+  box-shadow: 1px 20px 150px black, 1px 150px 250px black inset;
+  z-index: 5;
+}
+
+.container.wallpaper3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.316), rgba(0, 0, 0, 0.415)), url(./css/Assets/game-of-thrones-iron-throne-characters-uhdpaper.com-4K-70.jpg);
+  background-size: cover;
+  height: 105vh;
+  box-shadow: 1px 20px 150px black, 1px 30px 250px black inset;
+  z-index: 2;
+}
+
+.container.wallpaper4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.316), rgba(0, 0, 0, 0.625)), url(./css/Assets/52-527304_game-of-thrones-landscape-wallpaper-hd.jpg);
+  background-size: cover;
+  height: 100vh;
+  box-shadow: 1px 20px 150px black, 1px 20px 250px black inset;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-content {
+  margin-top: 40vh;
+
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.hero-container img {
+  width: 50vw;
+  filter: invert(1);
+}
+
+.social-medias-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-content p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+
+
+.social-medias-container ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.social-medias-container li {
+  margin: 30px;
+  font-size: 2rem;
+}
+
+
+.container-content2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0)70%, rgb(0, 0, 0) 90%);
+}
+
+.title-content {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.body-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 5vw;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card.disabled {
+  filter: grayscale(100);
+}
+
+.card.disabled:hover {
+  filter: grayscale(0);
+}
+
+
+
+.cards ul {
+  list-style: none;
+}
+
+.card img {
+  width: 150px;
+  margin: 10px;
+
+  border-radius: 5px;
+  padding: 5px;
+
+}
+
+.card.disabled img {
+  border: 1px solid rgba(255, 255, 255, 0.175);
+}
+
+.card img {
+  border: 2px solid rgba(255, 255, 255, 0.773);
+}
+
+.info {
+  width: 50%;
+}
+
+.info-name {
+  margin-left: 60px
+}
+
+.info-text {
+  margin-left: 60px;
+  text-shadow: 2px 1px black;
+}
+
+.info-text p {
+  color: rgb(213, 213, 213);
+}
+
+.img-person {
+  position: relative;
+  z-index: -1;
+  margin-top: -15vw;
+  display: flex;
+  justify-content: center;
+  filter: opacity(0.8);
+
+}
+
+.img-person img {
+  width: 350px;
+}

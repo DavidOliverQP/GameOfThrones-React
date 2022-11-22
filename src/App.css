@@ -126,7 +126,7 @@ body::-webkit-scrollbar-thumb {
 .title-content {
   display: flex;
   justify-content: center;
-  text-transform: uppercase;
+
   font-size: 2rem;
 }
 
@@ -191,6 +191,16 @@ body::-webkit-scrollbar-thumb {
   color: rgb(213, 213, 213);
 }
 
+.infos-episodes p span {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  text-align: start;
+  margin-right: 5px;
+  font-weight: 800;
+
+}
+
 .img-person {
   position: relative;
   z-index: -1;
@@ -207,6 +217,7 @@ body::-webkit-scrollbar-thumb {
 
 .container-content3 {
   width: 100vw;
+
 }
 
 .container-content3 .title-container {
@@ -384,6 +395,17 @@ ul {
 
 
 @media screen and (max-width: 768px) {
+
+  .container-content3 {
+    overflow-y: scroll;
+  }
+
+  .container-content3 .title-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
   .body-container {
     flex-direction: column;
     text-align: center;
@@ -444,9 +466,13 @@ ul {
     width: 100%;
   }
 
+
+
   .infos-episodes p {
-    width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 1rem;
   }
 
   .galery {

@@ -4,6 +4,9 @@ import jaime from '../css/Assets/yrZAKuXv6wUkQRHbhRVEWW.jpg'
 import tyrion from "../css/Assets/Tyrion-Lannister-PNG-Picture.png"
 import tyrion2 from "../css/Assets/1_OtG2bOqXGBQYWqw7Tef_Tg.jpeg"
 import jonSnow from "../css/Assets/0296738.jpg"
+import episode1 from "../css/Assets/episode1.jpg"
+import episode2 from "../css/Assets/episode2.png"
+import episode3 from "../css/Assets/episode3.png"
 const Intro = () => {
     return (
         <>
@@ -84,17 +87,17 @@ const Intro = () => {
                                 <ul>
                                     <li>
                                         <div className="episode-card active">
-                                            <img src={jaime} alt="" />
+                                            <img src={episode1} alt="" />
                                         </div>
                                     </li>
                                     <li>
                                         <div className="episode-card">
-                                            <img src={jaime} alt="" />
+                                            <img src={episode2} alt="" />
                                         </div>
                                     </li>
                                     <li>
                                         <div className="episode-card">
-                                            <img src={jaime} alt="" />
+                                            <img src={episode3} alt="" />
                                         </div>
                                     </li>
 
@@ -103,9 +106,16 @@ const Intro = () => {
 
                             <div className="infos-episodes">
                                 <h3 className="info-episode">
-                                    The Dragon and the Wolf
+                                    Winter is Coming
                                 </h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate corporis cupiditate? Aliquid, distinctio modi fugit repellat, officia quo voluptates perferendis eius ex enim eum deserunt cupiditate culpa recusandae doloribus?</p>
+                                <p>
+                                    <span>Plot:</span> After the death of his right-hand man, King Robert Baratheon travels north to Winterfell to ask his old friend Lord Eddard "Ned" Stark to assume the role. The queen, Cersei; her twin brother, Jaime Lannister; and their brother Tyrion Lannister arrive with the king. The two families intermingle to devastating result: Bran (the second youngest of the Stark children) interrupts Jaime and Cersei having incestuous sex, so Jaime pushes him from a tower window to silence him. Across the Narrow Sea in Pentos, exiled prince Viserys Targaryen forces his sister, Daenerys, to wed Khal Drogo, the leader of a Dothraki tribe, in exchange for an army so he can return to Westeros and reclaim his father's Iron Throne.
+                                </p>
+                                <p>
+                                    <span>Introduces:</span>Everyone, plus White Walkers (the undead entities that live Beyond the Wall), the Starks' pet direwolves, their ward Theon Greyjoy, and the treacherous prince Joffrey.
+                                </p>
+                                <p>
+                                    <span>Historic moment: </span>Dany receives three petrified dragon eggs as a wedding gift.</p>
                             </div>
 
 

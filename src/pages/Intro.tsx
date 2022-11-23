@@ -144,10 +144,10 @@ const Intro = () => {
 
                         <div className="cards">
                             <ul>
-                                <li className="card" onClick={(event) => handlerShowCharacters(event, allCharacters.jaime.name, allCharacters.jaime.about)}><img src={jaime} alt="" /></li>
-                                <li className="card active" onClick={(event) => handlerShowCharacters(event, allCharacters.tyrion.name, allCharacters.tyrion.about)}><img src={tyrion2} alt="" /></li>
-                                <li className="card" onClick={(event) => handlerShowCharacters(event, allCharacters.jonSnow.name, allCharacters.jonSnow.about)}><img src={jonSnow} alt="" /></li>
-                                <li className="card " onClick={(event) => handlerShowCharacters(event, allCharacters.daenerys.name, allCharacters.daenerys.about)}><img src={daenerys} alt="" /></li>
+                                <li className="card" ><img src={jaime} alt="" onClick={(event) => handlerShowCharacters(event, allCharacters.jaime.name, allCharacters.jaime.about)} /></li>
+                                <li className="card active" ><img src={tyrion2} alt="" onClick={(event) => handlerShowCharacters(event, allCharacters.tyrion.name, allCharacters.tyrion.about)} /></li>
+                                <li className="card" ><img src={jonSnow} alt="" onClick={(event) => handlerShowCharacters(event, allCharacters.jonSnow.name, allCharacters.jonSnow.about)} /></li>
+                                <li className="card " ><img src={daenerys} alt="" onClick={(event) => handlerShowCharacters(event, allCharacters.daenerys.name, allCharacters.daenerys.about)} /></li>
                             </ul>
                         </div>
 
@@ -189,18 +189,18 @@ const Intro = () => {
                         <div className="cards-episode">
                             <ul>
                                 <li>
-                                    <div className="episode-card active" onClick={(e) => { handlerShowEpisodeGuide(e, allGuideEpisodes.episode1.name, allGuideEpisodes.episode1.guide) }}>
-                                        <img src={episode1} alt="" />
+                                    <div className="episode-card active" >
+                                        <img src={episode1} alt="" onClick={(e) => { handlerShowEpisodeGuide(e, allGuideEpisodes.episode1.name, allGuideEpisodes.episode1.guide) }} />
                                     </div>
                                 </li>
                                 <li>
-                                    <div className="episode-card" onClick={(e) => { handlerShowEpisodeGuide(e, allGuideEpisodes.episode2.name, allGuideEpisodes.episode2.guide) }}>
-                                        <img src={episode2} alt="" />
+                                    <div className="episode-card" >
+                                        <img src={episode2} alt="" onClick={(e) => { handlerShowEpisodeGuide(e, allGuideEpisodes.episode2.name, allGuideEpisodes.episode2.guide) }} />
                                     </div>
                                 </li>
                                 <li>
-                                    <div className="episode-card" onClick={(e) => { handlerShowEpisodeGuide(e, allGuideEpisodes.episode3.name, allGuideEpisodes.episode3.guide) }}>
-                                        <img src={episode3} alt="" />
+                                    <div className="episode-card">
+                                        <img src={episode3} alt="" onClick={(e) => { handlerShowEpisodeGuide(e, allGuideEpisodes.episode3.name, allGuideEpisodes.episode3.guide) }} />
                                     </div>
                                 </li>
 

@@ -277,12 +277,21 @@ const Intro = () => {
                         </div>
                     </div>
 
-                    <div className="copyright">
-                        @David Oliveira
-                    </div>
+
                 </div>
 
 
+            </div>
+
+            <div className="copyright">
+                <h2>David Oliveira</h2>
+                <div className="social-medias-container">
+                    <ul>
+                        <li> <a href="https://github.com/Daviprogramming" target="__blank"><i className="fa-brands fa-github"></i></a> </li>
+                        <li><a href="https://www.linkedin.com/in/david-oliveira-077a77212" target="__blank"><i className="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/asdavidoliveira/" target="__blank"><i className="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
             </div>
 
         </div>

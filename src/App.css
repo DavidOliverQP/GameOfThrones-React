@@ -208,7 +208,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .img-person img {
-  width: 200px;
+  max-height: 400px;
 }
 
 .container-content3 {

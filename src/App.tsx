@@ -1,13 +1,21 @@
 import React from 'react';
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import logo from './logo.svg';
 import Navbar from './components/navbar';
+import NotFound from './pages/NotFound';
 import Intro from './pages/Intro';
 import './App.css';
+import path from 'path';
 
 function App() {
   return (
     <>
-      <Intro />
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Intro />} path="/" />
+          <Route element={<NotFound />} path="*" />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

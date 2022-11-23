@@ -9,32 +9,106 @@ import episode1 from "../css/Assets/episode1.jpg"
 import episode2 from "../css/Assets/episode2.png"
 import episode3 from "../css/Assets/episode3.png"
 const Intro = () => {
-
-    const [characters, setCharacters] = useState<object>({});
     const [showCharacter, setShowCharacter] = useState({ name: "Teste", text: "teste" })
+    const [showGuide, setShowGuide] = useState({ episode: "teste", guide: "teste" })
+    const allCharacters = {
+        jonSnow: {
+            name: "Jon Snow",
+            about: "Jon Snow is the bastard son of Eddard Stark, Lord of Winterfell. He has five half-siblings: Robb, Sansa, Arya, Bran, and Rickon Stark. Unaware of the identity of his mother, Jon was raised at Winterfell. At the age of fourteen, he joins the Night's Watch, where he earns the nickname Lord Snow.",
 
+        },
+        tyrion: {
+            name: "Tyrion Lannister",
+            about: "Lord Tyrion Lannister is the youngest child of Lord Tywin Lannister and younger brother of Cersei and Jaime Lannister. A dwarf, he uses his wit and intellect to overcome the prejudice he faces. He is the current Lord of Casterly Rock and Hand of the King to Brandon Stark."
+        },
+        jaime: {
+            name: "Jaime Lannister",
+            about: "Ser Jaime Lannister was the elder son of Lord Tywin Lannister, younger twin brother of Queen Cersei Lannister, and older brother of Tyrion Lannister"
+        },
+
+        daenerys: {
+            name: "Daenerys Targaryen",
+            about: "Putting it simply, Daenerys is a direct descendant of Rhaenyra, even if they are generations apart. She emerges from the line that originated from Rhaenyra's second marriage to her uncle Daemon, and from her son Viserys II, who will claim the Iron Throne and continue the Targaryen rebellion."
+        }
+    }
+
+    const allGuideEpisodes = {
+
+        episode1: {
+            name: "Winter Is Coming",
+            guide: `After the death of his right-hand man, King Robert Baratheon travels north to Winterfell to ask his old friend Lord Eddard "Ned" Stark to assume the role. The queen, Cersei; her twin brother, Jaime Lannister; and their brother Tyrion Lannister arrive with the king. The two families intermingle to devastating result: Bran (the second youngest of the Stark children) interrupts Jaime and Cersei having incestuous sex, so Jaime pushes him from a tower window to silence him. Across the Narrow Sea in Pentos, exiled prince Viserys Targaryen forces his sister, Daenerys, to wed Khal Drogo, the leader of a Dothraki tribe, in exchange for an army so he can return to Westeros and reclaim his father's Iron Throne.
+            Dany burns Drogo's body, her dragon eggs, and the witch. She climbs onto the pyre herself, later emerging from the ash unscathed, holding three baby dragons: Drogon, Rhaegal, and Viserion.`,
+        },
+        episode2: {
+            name: "The Kingsroad",
+            guide: `Daenyrys continues to be only an object to her new husband, we get another quick scene and then it’s right back to Jon Snow. C’mon, more Daenyrys! Tyrion gives some advice to Snow, (he’s always handing out helpful advice) and Jon continues with his brooding, “off to the wall because I’m a bastard” routine.
+            A little excitement is to be had when a mysterious assassin tries to finish off Bran, but Bran’s Dire Wolf protects him, if only to remind us how much we’d all like to see more of the Stark Wolves. It’s at this point Lady Stark goes from depression to action, as she starts putting together the chain of events that led to Bran’s fall. She decides she needs to warn Lord Stark about the nefarious Lannisters, and she’s got to carry the message herself.
+            Daenerys begins educating herself, via handy slavegirl Shae (Sibel Kekilli), about the finer points of a marriage bed. It is here she’ll make her play to become an equal partner to the horse lord. And we’re a go for intimacy!
+            Sansa Stark (Sophie Turner) happens upon her betrothed, Joffrey, and they share a walk. Sadly, this walk is to end in bloodshed, as they come across Arya practicing swordplay along the riverbank. Joffrey threatens, and then taunts her practice partner (the butcher’s son) which turns into a full-on brawl between Arya and Joffrey. Ayra’s Dire Wolf intercedes, naturally.
+            A quick verdict on the action scenes – they aren’t particularly well done. Clearly, the money was spent on practical sets and costumes; though that’s a decision I can’t quibble with.
+            Arya is forced to shoo her Dire Wolf away, lest it be captured and killed for attacking Prince Joffrey. A children’s fracas has turned terrible due to Joffrey’s cruelty. Arya is called to tell her side of the story, which directly contradicts Joffrey’s more self-serving testimony. Sansa is called to break the tie, but she refuses to testify against her prince, or on behalf of her sister. The good news? Everyone basically escapes punishment. The bad news? The butcher’s boy gets taken out, and Sansa’s Dire Wolf, call sign “Lady,” is forced to take the punishment for Arya’s escaped wolf. That sentence? Death. Lord Stark carries out the punishment, continuing to echo the leadership style shown in episode one.            
+            And then Bran wakes right up…           
+            What does episode three hold? Lord Stark will (finally, and mercifully) arrive at King’s Landing, where the real intrigue will start. As for Viserys? A comeuppance awaits!            
+            Like I said in the opening, episode two is solid and it only gets better from here. I’m also not sure if you heard or not, but HBO has already ordered a second season, announcing in a press release earlier this week saying following strong critical and viewer response to the series’ April 17 debut which drew in 4.2 million viewers.            
+            George R. R. Martin, author of the “A Song of Ice and Fire” book series the show is based on, revealed on his blog he will be writing the “Battle of the Blackwater” episode for the second season, which will be based on the second book in the series “A Clash of Kings.”           
+            Finally, here are the opening credits, which I praised in my review of episode one. See you next Sunday.`
+        },
+        episode3: {
+            name: "Lord Snow",
+            guide: `So the Starks (well, Ned, Catelyn, Sansa and Arya) have reached King’s Landing, the capital of Westeros and a city full of potential enemies and allies. But who can they trust? As Ned takes up his position as The King’s Hand, he learns that with great power, not only comes great responsibility, but plenty of people willing to stab you in the back.
+            If you found it hard to keep track of the characters so far, then episode 3 of Game Of Thrones requires you to take your concentration level to the next level, as a host of potential heroes and villains are introduced.
+            Firstly, we have Petyr ‘Littlefinger’ Baelish, the king’s treasurer and a man who keeps his loyalties close to his chest. Immediately introducing himself as an ally to Ned, Littlefinger has, as you’d expect, an ulterior motive for offering his aid. Basically, he used to be in love with Ned’s wife, Catelyn.
+
+            So what does he have to gain by aiding the new Hand, and what about the likes of Lord Varys, Grand Maester Pycelle and the king’s brother Renly? Can Ned trust any of them, especially when they seem to have let the king bankrupt his entire kingdom?
+
+            While Ned and Catelyn deal with the political intrigue and try and find out who may have tried to kill Bran (who is now paralysed from the waist down), what is young tomboy Arya left to do? Blaming herself for the butcher’s boy death in the previous episode and determined to learn how to prevent such a thing from happening again, she yearns to learn how to probably use Needle.
+
+            Entre Syrio Forel. A master fencer and former First Sword of Braavos, he will teach the young girl how to handle herself with a sword, with some quick parries, rapid thrusts and some fleet footed moves. With her father looking on approvingly, and yet concerned about how violence may be looming around the corner, these scenes act as a refreshing break from some of the darker moments before it.
+
+            Young Maisie Williams plays the role perfectly, with a loveable mixture of defiance, determination and child-like innocence. It will be interesting how she deals with the almost inevitable horrors that lurk around the corner.`
+        }
+    }
 
     useEffect(() => {
 
-        fetch('https://api.gameofthronesquotes.xyz/v1/characters').then(response => response.json()).then(Response => getCharacters(Response));
-
+        setShowCharacter({ name: allCharacters.tyrion.name, text: allCharacters.tyrion.about })
+        setShowGuide({ episode: allGuideEpisodes.episode1.name, guide: allGuideEpisodes.episode1.guide })
     }, [])
 
-    function getCharacters(response: any) {
-        let res = response;
-        res.forEach((personagem: any) => {
-            let name = (personagem.name).toLowerCase()
 
-            if (name == "tyrion lannister") {
-                let insertName = name;
+    function handlerShowCharacters(event: any, nome: any, text: any) {
 
-            }
-            else {
 
-            }
-        });
-        setCharacters(res);
+        let checkActivedCard = document.querySelectorAll('.card.active');
+        checkActivedCard.forEach((cardAtivado) => {
+            cardAtivado.classList.remove("active");
+        })
+
+        let click = event.target;
+        let card = click.parentNode;
+        card.classList.add("active");
+
+
+        setShowCharacter({ name: nome, text: text })
     }
+
+    function handlerShowEpisodeGuide(event: any, episodeShow: any, text: any) {
+
+        let checkActivedCard = document.querySelectorAll('.episode-card.active');
+        checkActivedCard.forEach((cardAtivado) => {
+            cardAtivado.classList.remove("active");
+        })
+        let click = event.target;
+        let card = click.parentNode;
+        card.classList.add("active");
+
+
+        setShowGuide({ episode: episodeShow, guide: text })
+
+    }
+
+
+
 
 
 
@@ -70,20 +144,20 @@ const Intro = () => {
 
                         <div className="cards">
                             <ul>
-                                <li className="card disabled"><img src={jaime} alt="" /></li>
-                                <li className="card"><img src={tyrion2} alt="" /></li>
-                                <li className="card disabled"><img src={jonSnow} alt="" /></li>
-                                <li className="card disabled"><img src={daenerys} alt="" /></li>
+                                <li className="card" onClick={(event) => handlerShowCharacters(event, allCharacters.jaime.name, allCharacters.jaime.about)}><img src={jaime} alt="" /></li>
+                                <li className="card active" onClick={(event) => handlerShowCharacters(event, allCharacters.tyrion.name, allCharacters.tyrion.about)}><img src={tyrion2} alt="" /></li>
+                                <li className="card" onClick={(event) => handlerShowCharacters(event, allCharacters.jonSnow.name, allCharacters.jonSnow.about)}><img src={jonSnow} alt="" /></li>
+                                <li className="card " onClick={(event) => handlerShowCharacters(event, allCharacters.daenerys.name, allCharacters.daenerys.about)}><img src={daenerys} alt="" /></li>
                             </ul>
                         </div>
 
                         <div className="info">
                             <div className="info-name">
-                                <h2>Tyrion Lannister</h2>
+                                <h2>{showCharacter.name}</h2>
                             </div>
 
                             <div className="info-text">
-                                <p>Lord Tyrion Lannister is the youngest child of Lord Tywin Lannister and younger brother of Cersei and Jaime Lannister. A dwarf, he uses his wit and intellect to overcome the prejudice he faces. He is the current Lord of Casterly Rock and Hand of the King to Brandon Stark</p>
+                                <p>{showCharacter.text}</p>
                             </div>
 
                             <div className="img-person">
@@ -115,17 +189,17 @@ const Intro = () => {
                         <div className="cards-episode">
                             <ul>
                                 <li>
-                                    <div className="episode-card active">
+                                    <div className="episode-card active" onClick={(e) => { handlerShowEpisodeGuide(e, allGuideEpisodes.episode1.name, allGuideEpisodes.episode1.guide) }}>
                                         <img src={episode1} alt="" />
                                     </div>
                                 </li>
                                 <li>
-                                    <div className="episode-card">
+                                    <div className="episode-card" onClick={(e) => { handlerShowEpisodeGuide(e, allGuideEpisodes.episode2.name, allGuideEpisodes.episode2.guide) }}>
                                         <img src={episode2} alt="" />
                                     </div>
                                 </li>
                                 <li>
-                                    <div className="episode-card">
+                                    <div className="episode-card" onClick={(e) => { handlerShowEpisodeGuide(e, allGuideEpisodes.episode3.name, allGuideEpisodes.episode3.guide) }}>
                                         <img src={episode3} alt="" />
                                     </div>
                                 </li>
@@ -135,16 +209,12 @@ const Intro = () => {
 
                         <div className="infos-episodes">
                             <h3 className="info-episode" >
-                                Winter is Coming
+                                {showGuide.episode}
                             </h3>
                             <p>
-                                <span>Plot:</span> After the death of his right-hand man, King Robert Baratheon travels north to Winterfell to ask his old friend Lord Eddard "Ned" Stark to assume the role. The queen, Cersei; her twin brother, Jaime Lannister; and their brother Tyrion Lannister arrive with the king. The two families intermingle to devastating result: Bran (the second youngest of the Stark children) interrupts Jaime and Cersei having incestuous sex, so Jaime pushes him from a tower window to silence him. Across the Narrow Sea in Pentos, exiled prince Viserys Targaryen forces his sister, Daenerys, to wed Khal Drogo, the leader of a Dothraki tribe, in exchange for an army so he can return to Westeros and reclaim his father's Iron Throne.
+                                {showGuide.guide}
                             </p>
-                            <p>
-                                <span>Introduces:</span>Everyone, plus White Walkers (the undead entities that live Beyond the Wall), the Starks' pet direwolves, their ward Theon Greyjoy, and the treacherous prince Joffrey.
-                            </p>
-                            <p>
-                                <span>Historic moment: </span>Dany receives three petrified dragon eggs as a wedding gift.</p>
+
                         </div>
 
 

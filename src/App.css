@@ -582,6 +582,12 @@ select option {
     border: none;
   }
 
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+  }
+
 
 }
 

@@ -2,7 +2,11 @@ import React from 'react'
 import '../css/notFound.css'
 const NotFound = () => {
     return (
-        <h1>Not Found</h1>
+        <>
+            <div className="container-notFound">
+                <h1>Not Found</h1>
+            </div>
+        </>
     )
 }
 

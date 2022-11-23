@@ -13,6 +13,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<Intro />} path="/" />
+          <Route element={<Intro />} path="/index" />
+          <Route element={<Intro />} path="/home" />
           <Route element={<NotFound />} path="*" />
         </Routes>
       </BrowserRouter>

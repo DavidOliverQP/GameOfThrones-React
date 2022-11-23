@@ -19,6 +19,8 @@ import wallpaper4 from "../css/Assets/wallpaper4.png"
 const Intro = () => {
     const [showCharacter, setShowCharacter] = useState({ name: "Teste", text: "teste", image: "" })
     const [showGuide, setShowGuide] = useState({ episode: "teste", guide: "teste" })
+    const [showGalery, setShowGalery] = useState({ wallpaper: "" })
+
     const allCharacters = {
         jonSnow: {
             name: "Jon Snow",
@@ -84,6 +86,7 @@ const Intro = () => {
 
         setShowCharacter({ name: allCharacters.tyrion.name, text: allCharacters.tyrion.about, image: allCharacters.tyrion.image })
         setShowGuide({ episode: allGuideEpisodes.episode1.name, guide: allGuideEpisodes.episode1.guide })
+        setShowGalery({ wallpaper: jaime });
     }, [])
 
 
@@ -116,6 +119,18 @@ const Intro = () => {
 
         setShowGuide({ episode: episodeShow, guide: text })
 
+    }
+
+    function handlerShowGalery(event: any, wallpaper: any) {
+        let checkActivedCard = document.querySelectorAll('li.active');
+        checkActivedCard.forEach((cardAtivado) => {
+            cardAtivado.classList.remove("active");
+        })
+        let click = event.target;
+        let card = click.parentNode;
+        card.classList.add("active");
+
+        setShowGalery({ wallpaper: wallpaper })
     }
 
 
@@ -243,14 +258,22 @@ const Intro = () => {
                     <div className="galery">
                         <div className="galery-left">
                             <ul>
-                                <li><img src={jaime} className="active" /></li>
-                                <li><img src={wallpaper2} /></li>
-                                <li><img src={wallpaper3} /></li>
-                                <li><img src={wallpaper4} /></li>
+                                <li className="active">
+                                    <img src={jaime} onClick={(event) => handlerShowGalery(event, jaime)} />
+                                </li>
+                                <li>
+                                    <img src={wallpaper2} onClick={(event) => handlerShowGalery(event, wallpaper2)} />
+                                </li>
+                                <li>
+                                    <img src={wallpaper3} onClick={(event) => handlerShowGalery(event, wallpaper3)} />
+                                </li>
+                                <li>
+                                    <img src={wallpaper4} onClick={(event) => handlerShowGalery(event, wallpaper4)} />
+                                </li>
                             </ul>
                         </div>
                         <div className="galery-right">
-                            <img src={jaime} alt="" />
+                            <img src={showGalery.wallpaper} alt="" />
                         </div>
                     </div>
 

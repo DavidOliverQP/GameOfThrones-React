@@ -352,23 +352,28 @@ select option {
 
 }
 
-.galery-left li {
-  border-left: 2px solid white;
-}
+
 
 .galery-left li:first-child {
-  border-top: 1px solid white;
+
   padding-top: 2px;
 }
 
-.galery-left img.active {
-  filter: grayscale(0);
-  border-bottom: 1px solid white;
+.galery-left li.active {
+
+  border-left: 3px solid rgba(255, 255, 255, 0.789);
+  border-radius: 3px;
+  margin-bottom: 5px;
+
 
 }
 
+.galery-left li.active img {
+  filter: grayscale(0);
+}
+
 .galery-left li:last-child {
-  border-bottom: 1px solid white;
+
   padding-bottom: 3px;
 }
 
@@ -386,7 +391,7 @@ select option {
 
 .galery-right img {
   width: 100%;
-  border: 1px solid white;
+
 
 }
 
@@ -503,9 +508,19 @@ select option {
     margin-bottom: -3vh;
   }
 
-  .galery-left img.active {
+  .galery-left li.active {
     border: none;
   }
+
+  .galery-left li.active img {
+    border: none;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.789);
+    border-radius: 3px;
+
+
+
+  }
+
 
 
   .galery-left li {

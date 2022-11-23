@@ -1,34 +1,40 @@
 import React, { useEffect, useState } from 'react'
 import hero from "../css/Assets/Game-of-Thrones_logo_PNG2.png"
 import jaime from '../css/Assets/yrZAKuXv6wUkQRHbhRVEWW.jpg'
-import tyrion from "../css/Assets/Tyrion-Lannister-PNG-Picture.png"
+import jaime2 from '../css/Assets/dck3m84-eebdcd1f-ec2b-4e0d-aeca-2135449341b5.png'
+import tyrion from "../css/Assets/de3901v-eca27fbc-370f-49ec-8764-dab9605c7ec4.png"
 import tyrion2 from "../css/Assets/1_OtG2bOqXGBQYWqw7Tef_Tg.jpeg"
 import jonSnow from "../css/Assets/0296738.jpg"
+import jonSnow2 from "../css/Assets/jon_snow_png_by_alwayslaughs_dbdbnpd-fullview.png"
 import daenerys from "../css/Assets/game-of-thrones-daenerys-targaryen.jpg";
+import daenerys2 from "../css/Assets/Daenerys-Targaryen-PNG-HD.png"
 import episode1 from "../css/Assets/episode1.jpg"
 import episode2 from "../css/Assets/episode2.png"
 import episode3 from "../css/Assets/episode3.png"
 const Intro = () => {
-    const [showCharacter, setShowCharacter] = useState({ name: "Teste", text: "teste" })
+    const [showCharacter, setShowCharacter] = useState({ name: "Teste", text: "teste", image: "" })
     const [showGuide, setShowGuide] = useState({ episode: "teste", guide: "teste" })
     const allCharacters = {
         jonSnow: {
             name: "Jon Snow",
             about: "Jon Snow is the bastard son of Eddard Stark, Lord of Winterfell. He has five half-siblings: Robb, Sansa, Arya, Bran, and Rickon Stark. Unaware of the identity of his mother, Jon was raised at Winterfell. At the age of fourteen, he joins the Night's Watch, where he earns the nickname Lord Snow.",
-
+            image: jonSnow2,
         },
         tyrion: {
             name: "Tyrion Lannister",
-            about: "Lord Tyrion Lannister is the youngest child of Lord Tywin Lannister and younger brother of Cersei and Jaime Lannister. A dwarf, he uses his wit and intellect to overcome the prejudice he faces. He is the current Lord of Casterly Rock and Hand of the King to Brandon Stark."
+            about: "Lord Tyrion Lannister is the youngest child of Lord Tywin Lannister and younger brother of Cersei and Jaime Lannister. A dwarf, he uses his wit and intellect to overcome the prejudice he faces. He is the current Lord of Casterly Rock and Hand of the King to Brandon Stark.",
+            image: tyrion,
         },
         jaime: {
             name: "Jaime Lannister",
-            about: "Ser Jaime Lannister was the elder son of Lord Tywin Lannister, younger twin brother of Queen Cersei Lannister, and older brother of Tyrion Lannister"
+            about: "Ser Jaime Lannister was the elder son of Lord Tywin Lannister, younger twin brother of Queen Cersei Lannister, and older brother of Tyrion Lannister",
+            image: jaime2,
         },
 
         daenerys: {
             name: "Daenerys Targaryen",
-            about: "Putting it simply, Daenerys is a direct descendant of Rhaenyra, even if they are generations apart. She emerges from the line that originated from Rhaenyra's second marriage to her uncle Daemon, and from her son Viserys II, who will claim the Iron Throne and continue the Targaryen rebellion."
+            about: "Putting it simply, Daenerys is a direct descendant of Rhaenyra, even if they are generations apart. She emerges from the line that originated from Rhaenyra's second marriage to her uncle Daemon, and from her son Viserys II, who will claim the Iron Throne and continue the Targaryen rebellion.",
+            image: daenerys2,
         }
     }
 
@@ -71,12 +77,12 @@ const Intro = () => {
 
     useEffect(() => {
 
-        setShowCharacter({ name: allCharacters.tyrion.name, text: allCharacters.tyrion.about })
+        setShowCharacter({ name: allCharacters.tyrion.name, text: allCharacters.tyrion.about, image: allCharacters.tyrion.image })
         setShowGuide({ episode: allGuideEpisodes.episode1.name, guide: allGuideEpisodes.episode1.guide })
     }, [])
 
 
-    function handlerShowCharacters(event: any, nome: any, text: any) {
+    function handlerShowCharacters(event: any, nome: any, text: any, image: any) {
 
 
         let checkActivedCard = document.querySelectorAll('.card.active');
@@ -89,7 +95,7 @@ const Intro = () => {
         card.classList.add("active");
 
 
-        setShowCharacter({ name: nome, text: text })
+        setShowCharacter({ name: nome, text: text, image: image })
     }
 
     function handlerShowEpisodeGuide(event: any, episodeShow: any, text: any) {
@@ -144,10 +150,10 @@ const Intro = () => {
 
                         <div className="cards">
                             <ul>
-                                <li className="card" ><img src={jaime} alt="" onClick={(event) => handlerShowCharacters(event, allCharacters.jaime.name, allCharacters.jaime.about)} /></li>
-                                <li className="card active" ><img src={tyrion2} alt="" onClick={(event) => handlerShowCharacters(event, allCharacters.tyrion.name, allCharacters.tyrion.about)} /></li>
-                                <li className="card" ><img src={jonSnow} alt="" onClick={(event) => handlerShowCharacters(event, allCharacters.jonSnow.name, allCharacters.jonSnow.about)} /></li>
-                                <li className="card " ><img src={daenerys} alt="" onClick={(event) => handlerShowCharacters(event, allCharacters.daenerys.name, allCharacters.daenerys.about)} /></li>
+                                <li className="card" ><img src={jaime} alt="" onClick={(event) => handlerShowCharacters(event, allCharacters.jaime.name, allCharacters.jaime.about, allCharacters.jaime.image)} /></li>
+                                <li className="card active" ><img src={tyrion2} alt="" onClick={(event) => handlerShowCharacters(event, allCharacters.tyrion.name, allCharacters.tyrion.about, allCharacters.tyrion.image)} /></li>
+                                <li className="card" ><img src={jonSnow} alt="" onClick={(event) => handlerShowCharacters(event, allCharacters.jonSnow.name, allCharacters.jonSnow.about, allCharacters.jonSnow.image)} /></li>
+                                <li className="card " ><img src={daenerys} alt="" onClick={(event) => handlerShowCharacters(event, allCharacters.daenerys.name, allCharacters.daenerys.about, allCharacters.daenerys.image)} /></li>
                             </ul>
                         </div>
 
@@ -156,13 +162,15 @@ const Intro = () => {
                                 <h2>{showCharacter.name}</h2>
                             </div>
 
+                            <div className="img-person">
+                                <img src={showCharacter.image} alt="" />
+                            </div>
+
                             <div className="info-text">
                                 <p>{showCharacter.text}</p>
                             </div>
 
-                            <div className="img-person">
-                                <img src={tyrion} alt="" />
-                            </div>
+
                         </div>
 
                     </div>

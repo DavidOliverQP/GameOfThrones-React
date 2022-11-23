@@ -200,7 +200,7 @@ body::-webkit-scrollbar-thumb {
 .img-person {
   position: relative;
   z-index: -1;
-  margin-top: -15vw;
+  margin-top: 1vw;
   display: flex;
   justify-content: center;
   filter: opacity(0.8);
@@ -208,7 +208,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .img-person img {
-  width: 350px;
+  width: 200px;
 }
 
 .container-content3 {
@@ -524,6 +524,11 @@ ul {
 
 @media screen and (max-width: 576px) {
 
+  .container-content2 {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
   .body-content {
     flex-direction: column;
   }
@@ -545,13 +550,6 @@ ul {
     width: 100px;
   }
 
-  .info {
-    margin-top: -5vh;
-  }
-
-  .img-person {
-    margin-top: -45vw;
-  }
 
   .info-name {
     margin-left: 0;

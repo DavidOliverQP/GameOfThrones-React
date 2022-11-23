@@ -11,6 +11,11 @@ import daenerys2 from "../css/Assets/Daenerys-Targaryen-PNG-HD.png"
 import episode1 from "../css/Assets/episode1.jpg"
 import episode2 from "../css/Assets/episode2.png"
 import episode3 from "../css/Assets/episode3.png"
+import wallpaper1 from "../css/Assets/wallpaper1.png";
+import wallpaper2 from "../css/Assets/wallpaper2.jpg"
+import wallpaper3 from "../css/Assets/wallpaper3.jpg";
+import wallpaper4 from "../css/Assets/wallpaper4.png"
+
 const Intro = () => {
     const [showCharacter, setShowCharacter] = useState({ name: "Teste", text: "teste", image: "" })
     const [showGuide, setShowGuide] = useState({ episode: "teste", guide: "teste" })
@@ -239,9 +244,9 @@ const Intro = () => {
                         <div className="galery-left">
                             <ul>
                                 <li><img src={jaime} className="active" /></li>
-                                <li><img src={jaime} /></li>
-                                <li><img src={jaime} /></li>
-                                <li><img src={jaime} /></li>
+                                <li><img src={wallpaper2} /></li>
+                                <li><img src={wallpaper3} /></li>
+                                <li><img src={wallpaper4} /></li>
                             </ul>
                         </div>
                         <div className="galery-right">

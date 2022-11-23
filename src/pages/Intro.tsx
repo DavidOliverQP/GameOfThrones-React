@@ -27,7 +27,7 @@ const Intro = () => {
         },
         jaime: {
             name: "Jaime Lannister",
-            about: "Ser Jaime Lannister was the elder son of Lord Tywin Lannister, younger twin brother of Queen Cersei Lannister, and older brother of Tyrion Lannister",
+            about: "Ser Jaime Lannister, also known as the Kingslayer, is a knight from House Lannister. He is the second child and first-born son of Lord Tywin Lannister of Casterly Rock and his wife, Lady Joanna, also of House Lannister. He is the twin brother of Queen Cersei Lannister.",
             image: jaime2,
         },
 

@@ -130,9 +130,12 @@ ul {
   overflow-y: scroll;
 }
 
+
 .container-content2::-webkit-scrollbar, .container-content3::-webkit-scrollbar{
   display: none;
 }
+
+
 
 .title-content {
   display: flex;

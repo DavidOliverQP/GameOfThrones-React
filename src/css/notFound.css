@@ -1,0 +1,18 @@
+@import url(../App.css);
+
+.container-notFound {
+    background: linear-gradient(rgba(0, 0, 0, 0.107), rgba(0, 0, 0, 0.688)), url(../css/Assets/wallpaper2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    margin-top: 45vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    cursor: default;
+}

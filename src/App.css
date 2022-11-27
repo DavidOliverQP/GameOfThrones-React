@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+  --gradiente: linear-gradient(rgba(174, 0, 0, 0.297), rgb(16, 244, 0));
+}
+
+* {
+  color: white;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Cinzel', serif;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container.walpaper1 {
+
+  background: linear-gradient(rgba(0, 0, 0, 0.115), rgba(0, 0, 0, 0.559)), url(./css/Assets/game-of-thrones-season-8-arya-throne-pr1i4zp0o0m7mybi-pr1i4zp0o0m7mybi.jpg);
+  background-size: cover;
+  box-shadow: 1px 20px 150px black, 1px 20px 250px black inset;
+  background-position: center;
+}
+
+
+.container.wallpaper2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.316), rgba(0, 0, 0, 0.415)), url(https://i.pinimg.com/originals/38/7b/9a/387b9a56ee3921bc38340beffee4c7a8.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 1px 20px 150px black, 1px 150px 250px black inset;
+  z-index: 5;
+}
+
+.container.wallpaper3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.908), rgba(0, 0, 0, 0.558)), url(./css/Assets/game-of-thrones-iron-throne-characters-uhdpaper.com-4K-70.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 105vh;
+  z-index: 2;
+}
+
+.container.wallpaper4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.359), rgb(0, 0, 0)), url(./css/Assets/52-527304_game-of-thrones-landscape-wallpaper-hd.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  box-shadow: 1px 20px 150px black, 1px 20px 250px black inset;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-content {
+  margin-top: 40vh;
+
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.hero-container img {
+  width: 50vw;
+  filter: invert(1);
+}
+
+.social-medias-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-content p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+
+
+.social-medias-container ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.social-medias-container li {
+  margin-right: 30px;
+  font-size: 2rem;
+}
+
+
+.container-content2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0)70%, rgb(0, 0, 0) 90%);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.title-content {
+  display: flex;
+  justify-content: center;
+
+  font-size: 2rem;
+}
+
+.body-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+.card {
+  cursor: default;
+  filter: grayscale(100);
+}
+
+
+.card.active {
+  filter: grayscale(0);
+}
+
+
+.cards ul {
+  list-style: none;
+}
+
+.card img {
+  width: 150px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.card img {
+  border: 1px solid rgba(255, 255, 255, 0.175);
+}
+
+.card.active img {
+  border: 2px solid rgba(255, 255, 255, 0.773);
+}
+
+.info {
+  width: 50%;
+}
+
+.info-name {
+  margin-left: 60px
+}
+
+.info-text {
+  margin-left: 60px;
+  text-shadow: 2px 1px black;
+}
+
+.info-text p {
+  color: rgb(213, 213, 213);
+}
+
+.infos-episodes p span {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  text-align: start;
+  margin-right: 5px;
+  font-weight: 800;
+
+}
+
+.img-person {
+  position: relative;
+  z-index: -1;
+  margin-top: 1vw;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.img-person img {
+  max-height: 400px;
+}
+
+.container-content3 {
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.container-content3 .title-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100vw;
+  margin-top: 5vh;
+  gap: 20px;
+
+  font-size: 1.8rem;
+}
+
+.selectSeason {
+  background-color: transparent;
+  border: none;
+  margin-top: 0.5vh;
+  font-size: 1.5rem;
+}
+
+.selectSeason::after,
+.selectSeason::before,
+.selectSeason:enabled {
+  background-color: transparent;
+}
+
+select option {
+  background: black;
+  color: white;
+  margin: 10px;
+}
+
+.body-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.cards-episode {
+  width: 60%;
+}
+
+.cards-episode ul {
+  list-style: none;
+  margin-left: 10vw;
+}
+
+.episode-card {
+  width: 40vh;
+  margin: 10px;
+}
+
+.episode-card img {
+  width: 90%;
+  filter: grayscale(0.7);
+  border: 1px solid rgba(255, 255, 255, 0.404);
+  padding: 3px;
+  cursor: pointer;
+}
+
+.episode-card img:hover {
+  filter: grayscale(0);
+}
+
+.episode-card.active img {
+  width: 100%;
+  filter: grayscale(0);
+}
+
+.infos-episodes {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-episode {
+  font-size: 2rem;
+}
+
+.infos-episodes p {
+  display: flex;
+  text-align: start;
+  width: 80%;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+
+.container-content4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-content4 h3 {
+
+  margin-bottom: 10vh;
+  font-size: 2rem;
+}
+
+.galery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 70vw;
+
+}
+
+
+
+.galery-left {
+  margin-top: -1.4vh;
+  width: 16%;
+}
+
+
+
+.galery-left img {
+  width: 100%;
+  max-height: 300px;
+  margin-bottom: -4px;
+  filter: grayscale(1);
+  cursor: pointer;
+  padding-left: 3px;
+
+}
+
+
+
+.galery-left li:first-child {
+
+  padding-top: 2px;
+}
+
+.galery-left li.active {
+
+  border-left: 3px solid rgba(255, 255, 255, 0.789);
+  border-radius: 3px;
+  margin-bottom: 5px;
+
+
+}
+
+.galery-left li.active img {
+  filter: grayscale(0);
+}
+
+.galery-left li:last-child {
+
+  padding-bottom: 3px;
+}
+
+.galery-left img:hover {
+  filter: grayscale(0);
+}
+
+
+
+
+.galery-right {
+  width: 55%;
+  z-index: 2;
+}
+
+.galery-right img {
+  width: 100%;
+
+
+}
+
+.copyright {
+  position: relative;
+  width: 100vw;
+  height: 5vw;
+  font-family: 'Rubik', sans-serif;
+  font-size: .5rem;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  opacity: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.032);
+
+
+
+
+
+}
+
+.copyright .social-medias-container {
+
+  align-items: center;
+}
+
+.copyright h2 {
+  display: flex;
+  align-self: center;
+  font-weight: 900;
+  color: white;
+  font-size: 1.5rem;
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .container-content3 {
+    overflow-y: scroll;
+  }
+
+  .container-content3 .title-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .body-container {
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+  }
+
+  .social-medias-container {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-medias-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+
+  .social-medias-container li {
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .cards-episode {
+    width: 100%;
+  }
+
+  .cards-episode ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: -5vh;
+  }
+
+  .info-episode {
+    font-size: 1.5rem;
+  }
+
+  .episode-card {
+    width: 13vh;
+  }
+
+  .episode-card.active {
+    width: 15vh;
+    margin-right: 3vw;
+  }
+
+
+
+  .cards-episode ul li {
+    margin: -5px;
+  }
+
+  .infos-episodes {
+    width: 100%;
+  }
+
+
+
+  .infos-episodes p {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 1rem;
+  }
+
+  .galery {
+    flex-direction: column;
+  }
+
+
+  .galery-left {
+    width: 100%;
+  }
+
+
+  .galery-left ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    justify-content: space-around;
+  }
+
+  .galery-left img {
+    margin-bottom: -3vh;
+  }
+
+  .galery-left li.active {
+    border: none;
+  }
+
+  .galery-left li.active img {
+    border: none;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.789);
+    border-radius: 3px;
+
+
+
+  }
+
+
+
+  .galery-left li {
+    border: none;
+
+  }
+
+  .galery-left li:last-child {
+    border: none;
+  }
+
+  .galery-left li:first-child {
+    border: none;
+    padding-top: 0;
+  }
+
+  .galery-left {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .galery-right {
+    width: 84%;
+    display: flex;
+    align-self: center;
+
+  }
+
+  .galery-right img {
+    margin-top: 2vw;
+    border: none;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+  }
+
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+  .container-content2 {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .body-content {
+    flex-direction: column;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6vw;
+  }
+
+  .cards ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -3vh;
+  }
+
+  .cards .card img {
+    width: 100px;
+  }
+
+
+  .info-name {
+    margin-left: 0;
+  }
+
+  .info-text {
+    margin-left: 0;
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+  .galery-left ul {
+    margin-right: 7vw !important;
+  }
+}
